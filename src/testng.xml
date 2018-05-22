@@ -2,6 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
        <test name="Calculator Test">
+             <groups>
+                   <run>
+                       <include name="Functional" />
+                       <exclude name="Regression" />
+                   </run>
+             </groups>
              <classes>
                    <class name="core.AddTest" />
                    <class name="core.DivideTest" />
